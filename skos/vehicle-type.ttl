@@ -5,13 +5,19 @@
 @prefix vcensos-concepts-vehicles: <https://censo.vehiculos.net/schema/concepts/vehicles/> .
 
 
+# ConceptScheme
+
 vcensos-concepts:VehicleType a skos:ConceptScheme ;
 	rdfs:label "Tipos de vehículos"@es ;
 	rdfs:label "Vehicle types"@en
 	dct:title "Concept scheme used to group different types of vehicles"@en
 	dct:title "Esquema de conceptos empleado para agrupar los diferentes tipos de vehículos"@es
-	dct:issued "2022-11-01"^^xsd:date ;
-    dct:modified "2022-11-07"^^xsd:date .
+    
+# SKOS concept listing
+
+vcensos-concepts-vehicles:Motocicletas a skos:Concept;
+	skos:inScheme vcensos-concepts:VehicleType ;
+	skos:prefLabel "Motocicletas"@es.
     
 vcensos-concepts-vehicles:CamionesYFurgonetas a skos:Concept;
 	skos:inScheme vcensos-concepts:VehicleType ;
@@ -27,12 +33,12 @@ vcensos-concepts-vehicles:Turismos a skos:Concept;
 	
 vcensos-concepts-vehicles:TractoresIndustriales a skos:Concept;
 	skos:inScheme vcensos-concepts:VehicleType ;
-	skos:prefLabel "TractoresIndustriales"@es.
+	skos:prefLabel "Tractores industriales"@es.
 	
 vcensos-concepts-vehicles:RemolquesYSemiremolques a skos:Concept;
 	skos:inScheme vcensos-concepts:VehicleType ;
-	skos:prefLabel "RemolquesYSemiremolques"@es.
+	skos:prefLabel "Remolques y semiremolques"@es.
 	
 vcensos-concepts-vehicles:OtrosVehiculos a skos:Concept;
 	skos:inScheme vcensos-concepts:VehicleType ;
-	skos:prefLabel "OtrosVehiculos"@es.
+	skos:prefLabel "Otros vehículos"@es.
