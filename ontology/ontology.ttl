@@ -9,6 +9,22 @@
 <https://censo.vehiculos.net/schema/> rdf:type owl:Ontology .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  https://censo.vehiculos.net/schema/fuelType
+:fuelType rdf:type owl:ObjectProperty ;
+          rdfs:domain :Vehiculo ;
+          rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+###  https://censo.vehiculos.net/schema/vehicleType
+:vehicleType rdf:type owl:ObjectProperty ;
+             rdfs:domain :Vehiculo ;
+             rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
+
+
+#################################################################
 #    Data properties
 #################################################################
 
@@ -28,6 +44,10 @@
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
+
 
 ###  https://censo.vehiculos.net/schema/Vehiculo
 :Vehiculo rdf:type owl:Class .
