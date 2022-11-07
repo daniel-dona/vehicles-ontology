@@ -27,6 +27,12 @@ vcensos:fuelType rdf:type owl:ObjectProperty ;
                  rdfs:range <http://www.w3.org/2004/02/skos/core#Concept> .
 
 
+###  https://censo.vehiculos.net/schema/registeredOn
+vcensos:registeredOn rdf:type owl:ObjectProperty ;
+                     rdfs:domain vcensos:Vehicle ;
+                     rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio> .
+
+
 ###  https://censo.vehiculos.net/schema/vehicleType
 vcensos:vehicleType rdf:type owl:ObjectProperty ;
                     rdfs:domain vcensos:Vehicle ;
