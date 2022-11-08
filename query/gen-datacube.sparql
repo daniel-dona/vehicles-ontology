@@ -32,11 +32,11 @@ vcensos-qb:dsd a qb:DataStructureDefinition ;
 ## Dimensions
 
 vcensos-qb-dsd:refArea a qb:ComponentSpecification ;
-  qb:dimension ex:refArea ;
+  qb:dimension vcensos:refArea ;
   rdfs:label "Location dimension" .
   
 vcensos-qb-dsd:refPeriod a qb:ComponentSpecification ;
-  qb:dimension ex:refPeriod ;
+  qb:dimension vcensos:refPeriod ;
   rdfs:label "Time dimension" .
 
 vcensos-qb-dsd:fuelType a qb:ComponentSpecification ;
