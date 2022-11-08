@@ -11,18 +11,16 @@ PREFIX interval: <http://reference.data.gov.uk/def/intervals/>
 
 PREFIX sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
 PREFIX sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
-PREFIX sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
 PREFIX sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
 
 
 CONSTRUCT {
 
 vcensos-qb:dataset a qb:DataSet ;
-  rdfs:label "Generated dataset"^^xmls:string ;
+  rdfs:label "Dataset of vehicles by Municipio and year interval" ;
   qb:structure vcensos-qb:dsd ;
   
 vcensos-qb:dsd a qb:DataStructureDefinition ;
-  rdfs:label "DSD for the dataset"@en ;
   qb:component 	
     vcensos-qb-dsd:location , 
     vcensos-qb-dsd:time , 
@@ -42,7 +40,7 @@ vcensos-qb-dsd:refPeriod a qb:ComponentSpecification ;
   rdfs:label "Time dimension" .
 
 vcensos-qb-dsd:fuelType a qb:ComponentSpecification ;
-  qb:dimension skos:Concepte ;
+  qb:dimension skos:Concept ;
   rdfs:label "Type of fuel dimension" .
   
 vcensos-qb-dsd:vehicleType a qb:ComponentSpecification ;
